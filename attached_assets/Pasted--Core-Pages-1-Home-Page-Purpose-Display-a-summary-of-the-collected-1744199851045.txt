@@ -1,0 +1,80 @@
+
+**Core Pages:**
+
+---
+
+### **1. Home Page:**
+- **Purpose:** Display a summary of the collected data in an easy-to-navigate format.
+- **Components:**
+  - **Navigation Bar:** Should include links to:
+    - Home
+    - Data Page (to view detailed data)
+    - Settings or Configuration Page (optional, if needed for any user adjustments like scraping frequency or other settings)
+    - About/Help (optional)
+  - **Main Content:**
+    - A card-based or grid layout to display the key categories of data collected (e.g., text and image previews).
+    - Each card/grid item should be clickable, leading to the **Data Detail Page**.
+    - Include a search bar to allow users to quickly find specific data.
+    - A brief description or title of each dataset (if applicable) with a thumbnail image (if images are being scraped).
+
+---
+
+### **2. Data Page:**
+- **Purpose:** Display all the detailed data scraped from the website.
+- **Components:**
+  - **Filters/Sorting:** Allow users to filter or sort data (e.g., by date, category, or relevance).
+  - **Main Content:**
+    - A table or grid layout to display the scraped data, depending on the type of data (text entries with images).
+    - Each data entry should have a brief title or description, with a thumbnail image if available.
+    - Pagination or infinite scroll for better navigation of large datasets.
+    - **Detail View Modal/Popup:** Clicking on any entry will open a modal/popup with detailed data:
+      - A larger view of the image (if applicable).
+      - Full text content, potentially with the option to copy or download.
+      - Data source or timestamp, if applicable.
+
+---
+
+### **3. Settings/Configuration Page (Optional):**
+- **Purpose:** Provide users with the ability to adjust settings for data scraping or display.
+- **Components:**
+  - **Scraping Frequency Setting:** Allow users to select the scraping frequency (e.g., one-time, daily).
+  - **Storage Settings:** If applicable, provide users with options to manage data storage settings (e.g., database connection settings).
+  - **Save/Cancel buttons:** Ensure users can save changes or cancel without making changes.
+
+---
+
+### **4. About/Help Page (Optional):**
+- **Purpose:** Provide information about the system or guide users on how to use the platform.
+- **Components:**
+  - Text-based content explaining the purpose of the scraper and how it works.
+  - FAQs or troubleshooting tips for users facing issues.
+
+---
+
+### **Modals/Popups:**
+
+#### **1. Data Detail Modal:**
+- **Purpose:** Display detailed information when the user clicks on an entry from the data grid/list.
+- **Components:**
+  - **Image View:** Display the image in a larger, more detailed view (if images are part of the scraped data).
+  - **Text View:** Display the full text content in a clear and readable manner.
+  - **Metadata:** Show any additional metadata such as scraping time or source.
+  - **Close Button:** Allow the user to close the modal.
+
+#### **2. Error Modal (for any scraping issues):**
+- **Purpose:** Alert users in case of errors during data collection or display.
+- **Components:**
+  - Display a message like: "An error occurred while fetching the data. Please try again later."
+  - A "Close" or "Retry" button to close the modal or retry fetching the data.
+
+---
+
+### **Design Requirements:**
+- **Responsive Design:** Ensure the layout adjusts gracefully on various devices (desktop, tablet, mobile).
+- **Minimalistic and Clean Design:** Focus on readability and usability. Use a simple, modern design with clear typography and appropriate spacing.
+- **User-Friendly Navigation:** Ensure that users can easily navigate between pages and modals.
+- **Color Scheme:** Use neutral colors with subtle accents (or use existing brand colors if applicable).
+- **Typography:** Choose a legible, modern font for all text elements.
+- **Accessibility:** Ensure the design is accessible, with appropriate contrast and text sizes for readability.
+
+- **Export Data:** Allow users to export data to formats such as CSV or PDF.
